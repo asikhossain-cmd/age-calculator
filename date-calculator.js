@@ -29,6 +29,9 @@ getButton.addEventListener('click', () => {
     if(getMonthDoB >= getMonthCdate && getDayCdate >= getDayDoB) {
         getYear += 1
     } 
-    console.log(getYear)
+    
+    // Lets Get Age Show and Show it to web browser
+    const getShowAge = document.getElementById('show-age');
+    getShowAge.innerText = `Your Age is ${getYear}`;
     
 })
