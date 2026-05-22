@@ -12,5 +12,15 @@ getButton.addEventListener('click', () => {
     const getDobDateToObj = new Date(getDobData.value);
 
     const getCurrentDateObj = new Date(getCurrentDate.value);
-    console.log(getCurrentDateObj)
+
+    // Extract Year and Months
+    const getYearDoB = getDobDateToObj.getFullYear();
+    const getMonthDoB = getDobDateToObj.getMonth();
+    const getDayDoB = getDobDateToObj.getDay();
+
+    const getYearCdate = getCurrentDate.getFullYear();
+    const getMonthCdate = getCurrentDate.getMonth();
+    const getDayCdate = getCurrentDate.getDay();
+
+    
 })
