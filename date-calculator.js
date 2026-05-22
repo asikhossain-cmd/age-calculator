@@ -26,7 +26,7 @@ getButton.addEventListener('click', () => {
     let getYear = getYearCdate - getYearDoB - 1;
 
     // Check if Pass 12 Month then add 1 year to getYear
-    if(getMonthDoB >= getMonthCdate && getDayCdate >= getDayDoB) {
+    if(getMonthCdate >= getMonthDoB && getDayCdate >= getDayDoB) {
         getYear += 1
     } 
     
